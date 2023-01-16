@@ -1,14 +1,10 @@
-for (let i = 1; i <= 100; i++) {
-    if (i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0) {
-        console.log(i);
-    } else {
-        const a = 'Fizz';
-        const b = 'Buzz';
-        const c = 'Bang';
+for (let i = 1; i <= 105; i++) {
+
         let str = '';
-        if (i % 3 === 0) str += a;
-        if (i % 5 === 0) str += b;
-        if (i% 7 === 0) str += c;
-        console.log(str);
-    }
+        if (i % 3 === 0) str += 'Fizz';
+        if (i % 5 === 0) str += 'Buzz';
+        if (i % 7 === 0) str += 'Bang';
+        if (i % 11 === 0) str += 'Snap';
+
+        console.log( str ? str : i);
 }
